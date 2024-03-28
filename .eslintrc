@@ -1,0 +1,6 @@
+{
+	"extends": "./javascript.js",
+	"rules": {
+		"max-len": 0
+	}
+}
