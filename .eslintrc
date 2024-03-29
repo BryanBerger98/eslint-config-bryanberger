@@ -2,7 +2,8 @@
 	"extends": [
 		"./javascript.js",
 		"./imports.js",
-		"./react.js"
+		"./react.js",
+		"./typescript.js"
 	],
 	"rules": {
 		"max-len": 0

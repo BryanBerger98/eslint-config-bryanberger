@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
 /* eslint-disable no-magic-numbers */
 const baseStyleRules = require('./javascript/style').rules;
 
@@ -332,7 +333,7 @@ module.exports = {
 
 		// only .jsx files may have JSX
 		// https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/jsx-filename-extension.md
-		'react/jsx-filename-extension': [ 'error', { extensions: [ '.jsx' ] } ],
+		'react/jsx-filename-extension': [ 'error', { extensions: [ '.jsx', '.tsx' ] } ],
 
 		// prevent accidental JS comments from being injected into JSX as text
 		// https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/jsx-no-comment-textnodes.md

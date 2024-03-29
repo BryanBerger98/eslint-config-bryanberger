@@ -139,7 +139,7 @@ module.exports = {
 
 		// Disallow loops with a body that allows only one iteration
 		// https://eslint.org/docs/rules/no-unreachable-loop
-		'no-unreachable-loop': [ 'error', { ignore: [] } ],  // WhileStatement, DoWhileStatement, ForStatement, ForInStatement, ForOfStatement 
+		'no-unreachable-loop': [ 'error', { ignore: [] } ], // WhileStatement, DoWhileStatement, ForStatement, ForInStatement, ForOfStatement
 
 		// disallow return/throw/break/continue inside finally blocks
 		// https://eslint.org/docs/rules/no-unsafe-finally
