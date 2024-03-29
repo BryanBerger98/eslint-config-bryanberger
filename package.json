@@ -12,7 +12,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git@github.com:BryanBerger98/eslint-config-bryanberger.git"
+		"url": "git+ssh://git@github.com/BryanBerger98/eslint-config-bryanberger.git"
 	},
 	"scripts": {
 		"lint": "eslint ."
