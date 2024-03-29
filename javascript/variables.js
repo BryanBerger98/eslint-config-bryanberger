@@ -31,7 +31,7 @@ module.exports = {
 			},
 		].concat(confusingBrowserGlobals.map((g) => ({
 			name: g,
-			message: `Use window.${g} instead. https://github.com/facebook/create-react-app/blob/HEAD/packages/confusing-browser-globals/README.md`,
+			message: `Use window.${ g } instead. https://github.com/facebook/create-react-app/blob/HEAD/packages/confusing-browser-globals/README.md`,
 		}))),
 
 		// disallow declaration of variables already declared in the outer scope
