@@ -27,6 +27,8 @@ module.exports = {
 				extendDefaults: true,
 			},
 		],
+		'no-shadow': 'off',
+		'@typescript-eslint/no-shadow': 'warn',
 	},
 	settings: {
 		'import/extensions': [

@@ -89,7 +89,13 @@ module.exports = {
 
 		// Enforce or disallow spaces inside of curly braces in JSX attributes
 		// https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/jsx-curly-spacing.md
-		'react/jsx-curly-spacing': [ 'error', 'never', { allowMultiline: true } ],
+		'react/jsx-curly-spacing': [
+			'warn',
+			{
+				when: 'always',
+				children: true,
+			},
+		],
 
 		// Enforce event handler naming conventions in JSX
 		// https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/jsx-handler-names.md
@@ -508,12 +514,7 @@ module.exports = {
 
 		// Disallow JSX props spreading
 		// https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/jsx-props-no-spreading.md
-		'react/jsx-props-no-spreading': [ 'error', {
-			html: 'enforce',
-			custom: 'enforce',
-			explicitSpread: 'ignore',
-			exceptions: [],
-		} ],
+		'react/jsx-props-no-spreading': 'off',
 
 		// Enforce that props are read-only
 		// https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/prefer-read-only-props.md

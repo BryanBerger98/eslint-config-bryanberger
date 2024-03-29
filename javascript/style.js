@@ -27,7 +27,7 @@ module.exports = {
 		// require camel case names
 		camelcase: [ 'warn', {
 			properties: 'never',
-			ignoreDestructuring: false,
+			ignoreDestructuring: true,
 		} ],
 
 		// enforce or disallow capitalization of the first letter of a comment

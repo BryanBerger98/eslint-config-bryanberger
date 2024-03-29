@@ -139,6 +139,8 @@ module.exports = {
 			js: 'never',
 			mjs: 'never',
 			jsx: 'never',
+			ts: 'never',
+			tsx: 'never',
 		} ],
 
 		// ensure absolute imports are above relative imports and that unassigned imports are ignored
@@ -176,7 +178,8 @@ module.exports = {
 
 		// Require modules with a single export to use a default export
 		// https://github.com/import-js/eslint-plugin-import/blob/master/docs/rules/prefer-default-export.md
-		'import/prefer-default-export': 'error',
+		// 'import/prefer-default-export': 'error',
+		'import/prefer-default-export': 'off',
 
 		// Restrict which files can be imported in a given folder
 		// https://github.com/import-js/eslint-plugin-import/blob/master/docs/rules/no-restricted-paths.md

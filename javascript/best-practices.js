@@ -385,7 +385,8 @@ module.exports = {
 		'prefer-object-has-own': 'warn',
 
 		// https://eslint.org/docs/rules/prefer-regex-literals
-		'prefer-regex-literals': [ 'error', { disallowRedundantWrapping: true } ],
+		// 'prefer-regex-literals': [ 'error', { disallowRedundantWrapping: true } ],
+		'prefer-regex-literals': 'off',
 
 		// require use of the second argument for parseInt()
 		// https://eslint.org/docs/rules/radix

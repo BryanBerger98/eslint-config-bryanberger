@@ -174,7 +174,7 @@ module.exports = {
 
 		// enforce usage of spacing in template strings
 		// https://eslint.org/docs/rules/template-curly-spacing
-		'template-curly-spacing': 'warn',
+		'template-curly-spacing': [ 'warn', 'always' ],
 
 		// enforce spacing around the * in yield* expressions
 		// https://eslint.org/docs/rules/yield-star-spacing
