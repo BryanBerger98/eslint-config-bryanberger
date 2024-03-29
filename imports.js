@@ -13,6 +13,8 @@ module.exports = {
 			'.js',
 			'.mjs',
 			'.jsx',
+			'.tsx',
+			'.ts',
 		],
 		'import/core-modules': [
 		],
