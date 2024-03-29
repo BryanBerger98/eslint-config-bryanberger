@@ -106,7 +106,13 @@ module.exports = {
 
 		// Validate props indentation in JSX
 		// https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/jsx-indent-props.md
-		'react/jsx-indent-props': [ 'error', 2 ],
+		'react/jsx-indent-props': [
+			'warn',
+			{
+				indentMode: 'tab',
+				ignoreTernaryOperator: true,
+			},
+		],
 
 		// Validate JSX has key prop when in array or iterator
 		// https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/jsx-key.md
@@ -247,7 +253,7 @@ module.exports = {
 
 		// Prevent missing React when using JSX
 		// https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/react-in-jsx-scope.md
-		'react/react-in-jsx-scope': 'error',
+		'react/react-in-jsx-scope': 'off',
 
 		// Require render() methods to return something
 		// https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/require-render-return.md
@@ -331,7 +337,14 @@ module.exports = {
 
 		// Enforce JSX indentation
 		// https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/jsx-indent.md
-		'react/jsx-indent': [ 'error', 2 ],
+		'react/jsx-indent': [
+			'warn',
+			'tab',
+			{
+				indentLogicalExpressions: true,
+				checkAttributes: true,
+			},
+		],
 
 		// Disallow target="_blank" on links
 		// https://github.com/jsx-eslint/eslint-plugin-react/blob/ac102885765be5ff37847a871f239c6703e1c7cc/docs/rules/jsx-no-target-blank.md
@@ -540,10 +553,13 @@ module.exports = {
 
 		// Enforce a specific function type for function components
 		// https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/function-component-definition.md
-		'react/function-component-definition': [ 'error', {
-			namedComponents: [ 'function-declaration', 'function-expression' ],
-			unnamedComponents: 'function-expression',
-		} ],
+		'react/function-component-definition': [
+			'warn',
+			{
+				namedComponents: 'arrow-function',
+				unamedComponents: 'arrow-function',
+			},
+		],
 
 		// Enforce a new line after jsx elements and expressions
 		// https://github.com/jsx-eslint/eslint-plugin-react/blob/e2eaadae316f9506d163812a09424eb42698470a/docs/rules/jsx-newline.md
