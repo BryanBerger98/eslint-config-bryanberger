@@ -3,7 +3,7 @@
 	"description": "My personal ESLint config",
 	"version": "1.0.0",
 	"license": "MIT",
-	"main": "app.js",
+	"main": "index.js",
 	"homepage": "https://github.com/BryanBerger98/eslint-config-bryanberger",
 	"author": {
 		"name": "Bryan Berger",
@@ -16,6 +16,20 @@
 	},
 	"scripts": {
 		"lint": "eslint ."
+	},
+	"exports": {
+		".": "./index.js",
+		"./javascript": "./javascript.js",
+		"./typescript": "./typescript.js",
+		"./react": "./react.js",
+		"./imports": "./imports.js",
+		"./javascript/es6": "./javascript/es6.js",
+		"./javascript/node": "./javascript/node.js",
+		"./javascript/style": "./javascript/style.js",
+		"./javascript/errors": "./rules/errors.js",
+		"./javascript/strict": "./javascript/strict.js",
+		"./javascript/variables": "./javascript/variables.js",
+		"./package.json": "./package.json"
 	},
 	"keywords": [
 		"eslint",
@@ -39,7 +53,6 @@
 		"@typescript-eslint/eslint-plugin": "^7.4.0",
 		"@typescript-eslint/parser": "^7.4.0",
 		"eslint": "^8.57.0",
-		"eslint-config-next": "^14.1.4",
 		"eslint-import-resolver-typescript": "^3.6.1",
 		"eslint-plugin-import": "^2.29.1",
 		"eslint-plugin-jsx-a11y": "^6.8.0",
@@ -49,5 +62,15 @@
 	},
 	"dependencies": {
 		"confusing-browser-globals": "^1.0.11"
+	},
+	"peerDependencies": {
+		"@typescript-eslint/eslint-plugin": "^7.4.0",
+		"@typescript-eslint/parser": "^7.4.0",
+		"eslint": "^8.57.0",
+		"eslint-import-resolver-typescript": "^3.6.1",
+		"eslint-plugin-import": "^2.29.1",
+		"eslint-plugin-jsx-a11y": "^6.8.0",
+		"eslint-plugin-react": "^7.34.1",
+		"eslint-plugin-react-hooks": "^4.6.0"
 	}
 }

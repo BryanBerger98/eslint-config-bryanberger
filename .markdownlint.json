@@ -15,5 +15,6 @@
 	},
 	"no-inline-html": false,
 	"no-blanks-blockquote": false,
-	"no-bare-urls": false
+	"no-bare-urls": false,
+	"no-duplicate-heading": false
 }

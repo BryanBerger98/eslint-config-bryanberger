@@ -1,8 +1,5 @@
 module.exports = {
-	env: {
-		node: true,
-	},
-
+	env: { node: true },
 	rules: {
 		// enforce return after a callback
 		'callback-return': 'off',
@@ -19,7 +16,7 @@ module.exports = {
 		'no-buffer-constructor': 'error',
 
 		// disallow mixing regular variable and require declarations
-		'no-mixed-requires': ['off', false],
+		'no-mixed-requires': [ 'off', false ],
 
 		// disallow use of new operator with the require function
 		'no-new-require': 'error',

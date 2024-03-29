@@ -51,13 +51,21 @@ module.exports = {
 		'no-undefined': 'off',
 
 		// disallow declaration of variables that are not used in the code
-		'no-unused-vars': ['warn', { vars: 'all', args: 'after-used', ignoreRestSiblings: true }],
+		'no-unused-vars': [ 'warn', {
+			vars: 'all',
+			args: 'after-used',
+			ignoreRestSiblings: true,
+		} ],
 
 		// disallow use of variables before they are defined
-		'no-use-before-define': ['warn', { functions: true, classes: true, variables: true }],
+		'no-use-before-define': 'warn',
 
-		'no-magic-numbers': ['warn', {
-			ignoreDefaultValues: true, ignoreArrayIndexes: true, ignoreClassFieldInitialValues: true, enforceConst: true, detectObjects: false,
-		}],
+		'no-magic-numbers': [ 'warn', {
+			ignoreDefaultValues: true,
+			ignoreArrayIndexes: true,
+			ignoreClassFieldInitialValues: true,
+			enforceConst: true,
+			detectObjects: false,
+		} ],
 	},
 };

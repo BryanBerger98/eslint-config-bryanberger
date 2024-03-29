@@ -1,5 +1,9 @@
 {
-	"extends": "./javascript.js",
+	"extends": [
+		"./javascript.js",
+		"./imports.js",
+		"./react.js"
+	],
 	"rules": {
 		"max-len": 0
 	}
