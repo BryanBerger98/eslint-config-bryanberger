@@ -90,6 +90,7 @@ module.exports = {
 				'**/protractor.conf.*.js', // protractor config
 				'**/karma.conf.js', // karma config
 				'**/.eslintrc.js', // eslint config
+				'**/reset.d.ts', // reset typescript definitions
 			],
 			optionalDependencies: false,
 		} ],
