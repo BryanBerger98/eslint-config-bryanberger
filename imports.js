@@ -91,6 +91,8 @@ module.exports = {
 				'**/karma.conf.js', // karma config
 				'**/.eslintrc.js', // eslint config
 				'**/reset.d.ts', // reset typescript definitions
+				'**/tailwind.config.js', // tailwind config
+				'**/tailwind.config.ts', // tailwind config
 			],
 			optionalDependencies: false,
 		} ],
