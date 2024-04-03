@@ -467,7 +467,7 @@ module.exports = {
 
 		// One JSX Element Per Line
 		// https://github.com/jsx-eslint/eslint-plugin-react/blob/843d71a432baf0f01f598d7cf1eea75ad6896e4b/docs/rules/jsx-one-expression-per-line.md
-		'react/jsx-one-expression-per-line': [ 'error', { allow: 'single-child' } ],
+		'react/jsx-one-expression-per-line': 'off',
 
 		// Enforce consistent usage of destructuring assignment of props, state, and context
 		// https://github.com/jsx-eslint/eslint-plugin-react/blob/843d71a432baf0f01f598d7cf1eea75ad6896e4b/docs/rules/destructuring-assignment.md
