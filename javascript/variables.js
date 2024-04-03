@@ -67,6 +67,11 @@ module.exports = {
 			ignoreClassFieldInitialValues: true,
 			enforceConst: true,
 			detectObjects: false,
+			ignore: [
+				0,
+				1,
+				-1,
+			],
 		} ],
 	},
 };
