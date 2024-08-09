@@ -1,6 +1,7 @@
 module.exports = {
 	extends: [
 		'plugin:@typescript-eslint/recommended',
+		'plugin:@stylistic/ts',
 	],
 	env: {
 		es6: true,
