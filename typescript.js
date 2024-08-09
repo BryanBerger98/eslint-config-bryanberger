@@ -1,7 +1,6 @@
 module.exports = {
 	extends: [
 		'plugin:@typescript-eslint/recommended',
-		'plugin:@stylistic/ts',
 	],
 	env: {
 		es6: true,
@@ -17,7 +16,7 @@ module.exports = {
 	],
 	rules: {
 		'@typescript-eslint/no-unused-vars': 'warn',
-		'@stylistic/ts/object-curly-spacing': [
+		'@stylistic/object-curly-spacing': [
 			'warn',
 			'always',
 		],
