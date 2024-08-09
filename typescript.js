@@ -12,21 +12,15 @@ module.exports = {
 	plugins: [
 		'@typescript-eslint',
 		'import',
+		'@stylistic',
 	],
 	rules: {
 		'@typescript-eslint/no-unused-vars': 'warn',
-		'@typescript-eslint/object-curly-spacing': [
+		'@stylistic/ts/object-curly-spacing': [
 			'warn',
 			'always',
 		],
 		'@typescript-eslint/no-explicit-any': 'off',
-		'@typescript-eslint/ban-types': [
-			'error',
-			{
-				types: { '{}': false },
-				extendDefaults: true,
-			},
-		],
 		'no-shadow': 'off',
 		'@typescript-eslint/no-shadow': 'warn',
 	},
