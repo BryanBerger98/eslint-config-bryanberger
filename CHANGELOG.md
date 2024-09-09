@@ -1,3 +1,10 @@
+## [1.1.2](https://github.com/BryanBerger98/eslint-config-bryanberger/compare/v1.1.1...v1.1.2) (2024-09-09)
+
+
+### Bug Fixes
+
+* **typescript:** fix stylistic ts plugin usage ([0f4c5b4](https://github.com/BryanBerger98/eslint-config-bryanberger/commit/0f4c5b4334a8c19e9a699fbea409cc98000e3d7d))
+
 ## [1.1.1](https://github.com/BryanBerger98/eslint-config-bryanberger/compare/v1.1.0...v1.1.1) (2024-08-09)
 
 
