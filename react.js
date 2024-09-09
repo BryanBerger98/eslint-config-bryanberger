@@ -1,5 +1,6 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 /* eslint-disable no-magic-numbers */
+// eslint-disable-next-line @typescript-eslint/no-require-imports
 const baseStyleRules = require('./javascript/style').rules;
 
 const dangleRules = baseStyleRules[ 'no-underscore-dangle' ];
@@ -123,7 +124,7 @@ module.exports = {
 		// https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/jsx-max-props-per-line.md
 		'react/jsx-max-props-per-line': [ 'error', {
 			maximum: 1,
-			when: 'multiline',
+			when: 'always',
 		} ],
 
 		// Prevent usage of .bind() in JSX props
@@ -169,7 +170,7 @@ module.exports = {
 
 		// Enforce props alphabetical sorting
 		// https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/jsx-sort-props.md
-		'react/jsx-sort-props': [ 'off', {
+		'react/jsx-sort-props': [ 'warn', {
 			ignoreCase: true,
 			callbacksLast: false,
 			shorthandFirst: false,

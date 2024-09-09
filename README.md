@@ -16,6 +16,18 @@ My default export contains most of my ESLint rules, including ECMAScript 6+, Typ
 npx install-peerdeps --dev eslint-config-bryanberger
 ```
 
+or
+
+```sh
+npm i -D eslint eslint-plugin-import @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint-import-resolver-typescript eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-jsx-a11y
+```
+
+or with pnpm:
+
+```sh
+pnpm add -D eslint eslint-plugin-import @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint-import-resolver-typescript eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-jsx-a11y
+```
+
 #### Extends config
 
 Add `"extends": "bryanberger"` to your `.eslintrc` to extend the entire configuration.
