@@ -8,7 +8,7 @@ I export five ESLint configurations for your usage.
 
 ### eslint-config-bryanberger
 
-My default export contains most of my ESLint rules, including ECMAScript 6+, TypeScript and React. It requires `eslint`, `eslint-plugin-import`, `@typescript-eslint/eslint-plugin`, `@typescript-eslint/parser`, `eslint-import-resolver-typescript`, `eslint-plugin-react`, `eslint-plugin-react-hooks`, and `eslint-plugin-jsx-a11y`.
+My default export contains most of my ESLint rules, including ECMAScript 6+, TypeScript and React. It requires `eslint`, `eslint-plugin-import`, `@stylistic/eslint-plugin`, `@typescript-eslint/eslint-plugin`, `@typescript-eslint/parser`, `eslint-import-resolver-typescript`, `eslint-plugin-react`, `eslint-plugin-react-hooks`, and `eslint-plugin-jsx-a11y`.
 
 #### Install the correct versions of each package
 
@@ -19,13 +19,13 @@ npx install-peerdeps --dev eslint-config-bryanberger
 or
 
 ```sh
-npm i -D eslint eslint-plugin-import @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint-import-resolver-typescript eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-jsx-a11y
+npm i -D eslint eslint-plugin-import @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint-import-resolver-typescript eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-jsx-a11y @stylistic/eslint-plugin
 ```
 
 or with pnpm:
 
 ```sh
-pnpm add -D eslint eslint-plugin-import @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint-import-resolver-typescript eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-jsx-a11y
+pnpm add -D eslint eslint-plugin-import @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint-import-resolver-typescript eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-jsx-a11y @stylistic/eslint-plugin
 ```
 
 #### Extends config
