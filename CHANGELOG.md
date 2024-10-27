@@ -1,3 +1,20 @@
+# [2.0.0](https://github.com/BryanBerger98/eslint-config-bryanberger/compare/v1.1.1...v2.0.0) (2024-10-27)
+
+
+### Bug Fixes
+
+* **typescript:** fix stylistic ts plugin usage ([0f4c5b4](https://github.com/BryanBerger98/eslint-config-bryanberger/commit/0f4c5b4334a8c19e9a699fbea409cc98000e3d7d))
+
+
+### Features
+
+* add eslint 9 support ([#3](https://github.com/BryanBerger98/eslint-config-bryanberger/issues/3)) ([d07d111](https://github.com/BryanBerger98/eslint-config-bryanberger/commit/d07d1113010b764f9be61412e0c180854ff5f567))
+
+
+### BREAKING CHANGES
+
+* needs @eslint/js and @estlint/eslintrc dependencies to work
+
 ## [1.1.2](https://github.com/BryanBerger98/eslint-config-bryanberger/compare/v1.1.1...v1.1.2) (2024-09-09)
 
 

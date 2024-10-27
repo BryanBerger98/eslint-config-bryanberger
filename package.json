@@ -1,7 +1,7 @@
 {
 	"name": "eslint-config-bryanberger",
 	"description": "My personal ESLint config",
-	"version": "1.1.2",
+	"version": "2.0.0",
 	"license": "MIT",
 	"main": "index.js",
 	"homepage": "https://github.com/BryanBerger98/eslint-config-bryanberger",
