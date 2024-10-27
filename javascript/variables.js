@@ -61,17 +61,6 @@ module.exports = {
 		// disallow use of variables before they are defined
 		'no-use-before-define': 'warn',
 
-		'no-magic-numbers': [ 'warn', {
-			ignoreDefaultValues: true,
-			ignoreArrayIndexes: true,
-			ignoreClassFieldInitialValues: true,
-			enforceConst: true,
-			detectObjects: false,
-			ignore: [
-				0,
-				1,
-				-1,
-			],
-		} ],
+		'no-magic-numbers': 'off'
 	},
 };

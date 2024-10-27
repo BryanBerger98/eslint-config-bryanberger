@@ -1,10 +1,3 @@
-/* eslint-disable @typescript-eslint/no-var-requires */
-/* eslint-disable no-magic-numbers */
-// eslint-disable-next-line @typescript-eslint/no-require-imports
-const baseStyleRules = require('./javascript/style').rules;
-
-const dangleRules = baseStyleRules[ 'no-underscore-dangle' ];
-
 module.exports = {
 	plugins: [
 		'react',
@@ -20,13 +13,7 @@ module.exports = {
 	// View link below for react rules documentation
 	// https://github.com/jsx-eslint/eslint-plugin-react#list-of-supported-rules
 	rules: {
-		'no-underscore-dangle': [
-			dangleRules[ 0 ],
-			{
-				...dangleRules[ 1 ],
-				allow: dangleRules[ 1 ].allow.concat([ '__REDUX_DEVTOOLS_EXTENSION_COMPOSE__' ]),
-			},
-		],
+		'no-underscore-dangle': 'off',
 
 		// Specify whether double or single quotes should be used in JSX attributes
 		// https://eslint.org/docs/rules/jsx-quotes
@@ -110,7 +97,7 @@ module.exports = {
 		'react/jsx-indent-props': [
 			'warn',
 			{
-				indentMode: 'tab',
+				indentMode: 2,
 				ignoreTernaryOperator: true,
 			},
 		],
@@ -340,7 +327,7 @@ module.exports = {
 		// https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/jsx-indent.md
 		'react/jsx-indent': [
 			'warn',
-			'tab',
+			2,
 			{
 				indentLogicalExpressions: true,
 				checkAttributes: true,
