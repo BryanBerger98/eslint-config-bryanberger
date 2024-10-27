@@ -1,4 +1,3 @@
-/* eslint-disable no-magic-numbers */
 module.exports = {
 	rules: {
 		// enforce line breaks after opening and before closing array brackets
@@ -135,7 +134,7 @@ module.exports = {
 		// https://eslint.org/docs/rules/indent
 		indent: [
 			'warn',
-			'tab',
+			2,
 			{ SwitchCase: 1 },
 		],
 
@@ -374,12 +373,7 @@ module.exports = {
 
 		// disallow dangling underscores in identifiers
 		// https://eslint.org/docs/rules/no-underscore-dangle
-		'no-underscore-dangle': [ 'warn', {
-			allow: [ '_id' ],
-			allowAfterThis: false,
-			allowAfterSuper: false,
-			enforceInMethodNames: true,
-		} ],
+		'no-underscore-dangle': 'off',
 
 		// disallow the use of Boolean literals in conditional expressions
 		// also, prefer `a || b` over `a ? a : b`

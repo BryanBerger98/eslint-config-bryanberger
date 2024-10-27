@@ -75,33 +75,26 @@
 			}
 		]
 	},
-	"devDependencies": {
-		"@semantic-release/changelog": "^6.0.3",
-		"@semantic-release/git": "^10.0.1",
-		"@stylistic/eslint-plugin": "*",
-		"@typescript-eslint/eslint-plugin": "8.0.1",
-		"@typescript-eslint/parser": "8.0.1",
-		"eslint": "*",
-		"eslint-import-resolver-typescript": "3.6.1",
-		"eslint-plugin-import": "2.29.1",
-		"eslint-plugin-jsx-a11y": "6.9.0",
-		"eslint-plugin-react": "7.35.0",
-		"eslint-plugin-react-hooks": "4.6.2",
-		"markdownlint": "^0.34.0",
-		"semantic-release": "^23.0.6"
-	},
 	"dependencies": {
 		"confusing-browser-globals": "^1.0.11"
 	},
 	"peerDependencies": {
-		"@stylistic/eslint-plugin": "^2.6.2",
-		"@typescript-eslint/eslint-plugin": "^8.0.1",
-		"@typescript-eslint/parser": "^8.0.1",
-		"eslint": "^8.57.0",
-		"eslint-import-resolver-typescript": "^3.6.1",
-		"eslint-plugin-import": "^2.29.1",
-		"eslint-plugin-jsx-a11y": "^6.9.0",
-		"eslint-plugin-react": "^7.35.0",
-		"eslint-plugin-react-hooks": "^4.6.2"
+		"@eslint/eslintrc": "^3.1.0",
+		"@eslint/js": "^9.13.0",
+		"@stylistic/eslint-plugin": "^2.9.0",
+		"@typescript-eslint/eslint-plugin": "^8.11.0",
+		"@typescript-eslint/parser": "^8.11.0",
+		"eslint": "^9.13.0",
+		"eslint-import-resolver-typescript": "^3.6.3",
+		"eslint-plugin-import": "^2.31.0",
+		"eslint-plugin-jsx-a11y": "^6.10.2",
+		"eslint-plugin-react": "^7.37.2",
+		"eslint-plugin-react-hooks": "^5.0.0"
+	},
+	"devDependencies": {
+		"@semantic-release/changelog": "^6.0.3",
+		"@semantic-release/git": "^10.0.1",
+		"markdownlint": "^0.36.0",
+		"semantic-release": "^24.2.0"
 	}
 }

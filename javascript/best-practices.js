@@ -1,4 +1,3 @@
-/* eslint-disable no-magic-numbers */
 module.exports = {
 	rules: {
 		// enforces getter/setter pairs in objects
