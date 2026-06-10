@@ -26,7 +26,7 @@
 		"./javascript/es6": "./javascript/es6.js",
 		"./javascript/node": "./javascript/node.js",
 		"./javascript/style": "./javascript/style.js",
-		"./javascript/errors": "./rules/errors.js",
+		"./javascript/errors": "./javascript/errors.js",
 		"./javascript/strict": "./javascript/strict.js",
 		"./javascript/variables": "./javascript/variables.js",
 		"./package.json": "./package.json"
