@@ -1,4 +1,4 @@
-name: Create a release
+name: Release
 
 on:
   push:
@@ -17,18 +17,21 @@ jobs:
       pull-requests: write
       id-token: write
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
           persist-credentials: false
       - name: Setup Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: '20.x'
+          registry-url: 'https://registry.npmjs.org'
+      - name: Update npm for trusted publishing
+        run: npm install -g npm@latest
       - name: Install dependencies
-        run: npm install
+        run: npm ci
       - name: Release
         env:
-          NPM_TOKEN: ${{ secrets.NPM_ACCESS_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
         run: npx semantic-release
