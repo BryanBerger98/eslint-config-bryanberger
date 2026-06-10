@@ -1,3 +1,10 @@
+## [2.0.1](https://github.com/BryanBerger98/eslint-config-bryanberger/compare/v2.0.0...v2.0.1) (2026-06-10)
+
+
+### Bug Fixes
+
+* correct javascript errors export path ([#4](https://github.com/BryanBerger98/eslint-config-bryanberger/issues/4)) ([e22b1f7](https://github.com/BryanBerger98/eslint-config-bryanberger/commit/e22b1f75eda7708811a14cf8d5c0a88dd878dd0c))
+
 # [2.0.0](https://github.com/BryanBerger98/eslint-config-bryanberger/compare/v1.1.1...v2.0.0) (2024-10-27)
 
 
